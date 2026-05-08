@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀 Logic Trap Survey 🎀</title>
+    <style>
+        :root {
+            --pink-main: #ffb6c1;
+            --pink-dark: #ff69b4;
+            --pink-light: #fff0f5;
+            --white: #ffffff;
+            --text-gray: #5a5a5a;
+        }
+
+        body {
+            background-color: var(--pink-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 35px;
+            border: 4px solid var(--pink-main);
+            box-shadow: 0 12px 25px rgba(255, 182, 193, 0.4);
+            width: 90%;
+            max-width: 480px;
+            text-align: center;
+            position: relative;
+        }
+
+        .container::before {
+            content: '🎀';
+            font-size: 45px;
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .page { display: none; animation: fadeIn 0.4s ease-out; }
+        .active { display: block; }
+
+        h2 { color: var(--pink-dark); margin-bottom: 10px; font-size: 1.4rem; letter-spacing: 1px; }
+        p { color: var(--text-gray); line-height: 1.5; font-size: 1.05rem; margin-bottom: 25px; }
+
+        .btn-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 12px; 
+            margin-top: 10px; 
+        }
+
+        button {
+            background: #fffafa;
+            color: var(--pink-dark);
+            border: 2px solid var(--pink-main);
+            padding: 12px 10px;
+            border-radius: 18px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: var(--pink-main);
+            color: white;
+            transform: scale(1.02);
+        }
+
+        .reason-box {
+            display: none;
+            margin-top: 25px;
+            padding: 15px;
+            background: #fff5f7;
+            border-left: 5px solid var(--pink-dark);
+            border-radius: 10px;
+            color: #8a3053;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .next-btn {
+            background: var(--pink-dark);
+            color: white;
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀 Logic Trap Survey 🎀</title>
+    <style>
+        :root {
+            --pink-main: #ffb6c1;
+            --pink-dark: #ff69b4;
+            --pink-light: #fff0f5;
+            --white: #ffffff;
+            --text-gray: #5a5a5a;
+        }
+
+        body {
+            background-color: var(--pink-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 35px;
+            border: 4px solid var(--pink-main);
+            box-shadow: 0 12px 25px rgba(255, 182, 193, 0.4);
+            width: 90%;
+            max-width: 480px;
+            text-align: center;
+            position: relative;
+        }
+
+        .container::before {
+            content: '🎀';
+            font-size: 45px;
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .page { display: none; animation: fadeIn 0.4s ease-out; }
+        .active { display: block; }
+
+        h2 { color: var(--pink-dark); margin-bottom: 10px; font-size: 1.4rem; letter-spacing: 1px; }
+        p { color: var(--text-gray); line-height: 1.5; font-size: 1.05rem; margin-bottom: 25px; }
+
+        .btn-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 12px; 
+            margin-top: 10px; 
+        }
+
+        button {
+            background: #fffafa;
+            color: var(--pink-dark);
+            border: 2px solid var(--pink-main);
+            padding: 12px 10px;
+            border-radius: 18px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: var(--pink-main);
+            color: white;
+            transform: scale(1.02);
+        }
+
+        .reason-box {
+            display: none;
+            margin-top: 25px;
+            padding: 15px;
+            background: #fff5f7;
+            border-left: 5px solid var(--pink-dark);
+            border-radius: 10px;
+            color: #8a3053;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .next-btn {
+            background: var(--pink-dark);
+            color: white;
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Start Screen -->
+    <div class="page active" id="start">
+        <h2>Survey!</h2>
+        <p>This is a standard ..normal.. survey on student behavior. ✨<br><br>Please select the most "accurate" response for each scenario. Good luck!</p>
+        <button onclick="goTo('start', 'p1')" style="width: 100%; background: var(--pink-dark); color: white;">Begin Survey</button>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="page" id="p1">
+        <h2>Question 1</h2>
+        <p>Have you finally decided to stop cheating on your major exams?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r1', 'A')">Yes, I'm better now</button>
+            <button onclick="showReason('r1', 'B')">No, not yet</button>
+            <button onclick="showReason('r1', 'C')">I don't know</button>
+            <button onclick="showReason('r1', 'D')">I have never cheated</button>
+        </div>
+        <div id="r1" class="reason-box"></div>
+        <button id="next1" class="next-btn" style="display:none;" onclick="goTo('p1', 'p2')">Continue ➔</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="page" id="p2">
+        <h2>Question 2</h2>
+        <p>Should students focus on math, or is it better to be happy?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r2', 'A')">Focus on Math</button>
+            <button onclick="showReason('r2', 'B')">Choose Happiness</button>
+            <button onclick="showReason('r2', 'C')">I'm unsure</button>
+            <button onclick="showReason('r2', 'D')">They aren't exclusive</button>
+        </div>
+        <div id="r2" class="reason-box"></div>
+        <button id="next2" class="next-btn" style="display:none;" onclick="goTo('p2', 'p3')">Continue ➔</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="page" id="p3">
+        <h2>Question 3</h2>
+        <p>Why are you being so difficult with this survey today?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r3', 'A')">I'm tired</button>
+            <button onclick="showReason('r3', 'B')">I'm not difficult</button>
+            <button onclick="showReason('r3', 'C')">I didn't mean to be</button>
+            <button onclick="showReason('r3', 'D')">The question is loaded</button>
+        </div>
+        <div id="r3" class="reason-box"></div>
+        <button id="next3" class="next-btn" style="display:none;" onclick="goTo('p3', 'p4')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p4">
+        <h2>Question 4</h2>
+        <p>Is it exactly 2:00 PM right now?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r4', 'A')">Depends on the time zone</button>
+            <button onclick="showReason('r4', 'B')">Yes, obviously</button>
+            <button onclick="showReason('r4', 'C')">No, it's not</button>
+            <button onclick="showReason('r4', 'D')">I'll check my watch</button>
+        </div>
+        <div id="r4" class="reason-box"></div>
+        <button id="next4" class="next-btn" style="display:none;" onclick="goTo('p4', 'p5')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p5">
+        <h2>Question 5</h2>
+        <p>On a scale of 1-10, how much do you hate Math?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r5', 'A')">1 (Not much)</button>
+            <button onclick="showReason('r5', 'B')">Invalid: I love Math!</button>
+            <button onclick="showReason('r5', 'C')">10 (A lot!)</button>
+            <button onclick="showReason('r5', 'D')">I don't know</button>
+        </div>
+        <div id="r5" class="reason-box"></div>
+        <button id="next5" class="next-btn" style="display:none;" onclick="goTo('p5', 'p6')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p6">
+        <h2>Question 6</h2>
+        <p>If a tree falls in a forest and no one is there, does it make a sound?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r6', 'A')">Yes, air moves</button>
+            <button onclick="showReason('r6', 'B')">No, no one hears it</button>
+            <button onclick="showReason('r6', 'C')">Define "Sound" first</button>
+            <button onclick="showReason('r6', 'D')">Probably not</button>
+        </div>
+        <div id="r6" class="reason-box"></div>
+        <button id="next6" class="next-btn" style="display:none;" onclick="goTo('p6', 'p7')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p7">
+        <h2>Question 7</h2>
+        <p>Do you think Dogs are better than Cats?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r7', 'A')">That's an opinion</button>
+            <button onclick="showReason('r7', 'B')">Dogs are better</button>
+            <button onclick="showReason('r7', 'C')">Cats are better</button>
+            <button onclick="showReason('r7', 'D')">Neither is good</button>
+        </div>
+        <div id="r7" class="reason-box"></div>
+        <button id="next7" class="next-btn" style="display:none;" onclick="goTo('p7', 'p8')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p8">
+        <h2>Question 8</h2>
+        <p>What is a secret that you have never told anyone?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r8', 'A')">I failed a test once</button>
+            <button onclick="showReason('r8', 'B')">I have a crush</button>
+            <button onclick="showReason('r8', 'C')">I'm not telling</button>
+            <button onclick="showReason('r8', 'D')">It wouldn't be a secret</button>
+        </div>
+        <div id="r8" class="reason-box"></div>
+        <button id="next8" class="next-btn" style="display:none;" onclick="goTo('p8', 'p9')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p9">
+        <h2>Question 9</h2>
+        <p>Are you with us or against us?</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r9', 'A')">I'm with you!</button>
+            <button onclick="showReason('r9', 'B')">I'm against you!</button>
+            <button onclick="showReason('r9', 'C')">I am neutral</button>
+            <button onclick="showReason('r9', 'D')">I don't care</button>
+        </div>
+        <div id="r9" class="reason-box"></div>
+        <button id="next9" class="next-btn" style="display:none;" onclick="goTo('p9', 'p10')">Continue ➔</button>
+    </div>
+
+    <div class="page" id="p10">
+        <h2>Question 10</h2>
+        <p>True or False: This statement is false.</p>
+        <div class="btn-grid">
+            <button onclick="showReason('r10', 'A')">True</button>
+            <button onclick="showReason('r10', 'B')">False</button>
+            <button onclick="showReason('r10', 'C')">I don't know</button>
+            <button onclick="showReason('r10', 'D')">It's a paradox</button>
+        </div>
+        <div id="r10" class="reason-box"></div>
+        <button id="next10" class="next-btn" style="display:none;" onclick="goTo('p10', 'end')">Finish Survey ➔</button> 
+    </div>
+
+    <div class="page" id="end">
+        <h2>🎀 Survey Complete! 🎀</h2>
+        <p>You've navigated the logic minefield. How many traps did you trigger?</p>
+        <button onclick="location.reload()" style="width: 100%; background: var(--pink-dark); color: white;">Reset Quiz</button>
+    </div>
+</div>
+
+<script>
+    const logicData = {
+        'r1': {
+            'A': "❌ TRAP: Picking Yes admits you were a cheater. (Loaded Question)",
+            'B': "❌ TRAP: Picking No admits you are still a cheater. (Loaded Question)",
+            'C': "❌ TRAP: Uncertainty implies you might have cheated. (Loaded Question)",
+            'D': "✅ LOGIC: You rejected the hidden premise of the question."
+        },
+        'r2': {
+            'A': "❌ TRAP: This implies you can't have both. (False Dilemma)",
+            'B': "❌ TRAP: This implies you can't have both. (False Dilemma)",
+            'C': "❌ TRAP: You accepted the two options as the only choices.",
+            'D': "✅ LOGIC: You realized these two things can happen at the same time!"
+        },
+        'r3': {
+            'A': "❌ TRAP: You just agreed that you ARE being difficult. (Presupposition)",
+            'B': "❌ TRAP: This is a defensive answer to an unfair question.",
+            'C': "❌ TRAP: You apologized for a trait the question invented.",
+            'D': "✅ LOGIC: You identified the question as a logical trap."
+        },
+        'r4': {
+            'A': '✅ LOGIC: You realized time depends on your physical location!',
+            'B': '❌ TRAP: This assumes everyone is in the same time zone.',
+            'C': '❌ TRAP: "Yes" is only true for a tiny sliver of the world.',
+            'D': '❌ TRAP: You ignored the relative nature of time.'
+        },
+        'r5': {
+            'A': '❌ TRAP: You accepted a scale that limits your feelings.',
+            'B': '✅ LOGIC: You challenged the scale because you actually love Math!',
+            'C': '❌ TRAP: 10 still implies a level of hate.',
+            'D': '❌ TRAP: "I dunno" still accepts the scale as valid.'
+        },
+        'r6': {
+            'A': '❌ TRAP: You assumed "sound" only means physical waves.',
+            'B': '❌ TRAP: You assumed "sound" only means someone hearing it.',
+            'C': '✅ LOGIC: You realized the answer changes based on how you define the word.',
+            'D': '❌ TRAP: You picked a side without clarifying the language.'
+        },
+        'r7': {
+            'A': '✅ LOGIC: You spotted that "better" is a feeling, not a fact.',
+            'B': '❌ TRAP: This is a personal preference, not a logical truth.',
+            'C': '❌ TRAP: This is a personal preference, not a logical truth.',
+            'D': '❌ TRAP: You are choosing a winner in a subjective contest.'
+        },
+        'r8': {
+            'A': '❌ TRAP: You just shared it, so it is no longer a secret.',
+            'B': '❌ TRAP: Typing it here makes it data, not a secret.',
+            'C': '❌ TRAP: You fell for the pressure of the question.',
+            'D': '✅ LOGIC: Sharing a secret destroys the definition of the secret.'
+        },
+        'r9': {
+            'A': '❌ TRAP: You picked a side in a fake two-choice world.',
+            'B': '❌ TRAP: You picked a side in a fake two-choice world.',
+            'C': '✅ LOGIC: You found the third option: Neutrality.',
+            'D': '❌ TRAP: You ignored the possibility of being neither.'
+        },
+        'r10': {
+            'A': '❌ TRAP: If it’s true, then it’s false... wait...',
+            'B': '❌ TRAP: If it’s false, then it’s actually true...',
+            'C': '❌ TRAP: You tried to pick a side in a loop.',
+            'D': '✅ LOGIC: You recognized a paradox that cannot be solved by Yes/No.'
+        }
+    };
+
+    function showReason(boxId, choice) {
+        const box = document.getElementById(boxId);
+        box.innerText = logicData[boxId][choice];
+        box.style.display = 'block';
+        
+        const nextId = 'next' + boxId.replace('r', '');
+        document.getElementById(nextId).style.display = 'block';
+    }
+
+    function goTo(current, next) {
+        document.getElementById(current).classList.remove('active');
+        document.getElementById(next).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
