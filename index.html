@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎀 Logic Trap Survey 🎀</title>
+    <title>Logic Trap Survey </title>
     <style>
         :root {
             --pink-main: #ffb6c1;
@@ -266,11 +266,11 @@
 
     <div class="page" id="p5">
         <h2>Question 5</h2>
-        <p>On a scale of 1-10, how much do you hate Math?</p>
+        <p>Does your teacher know you've decided to hate Math?</p>
         <div class="btn-grid">
-            <button onclick="showReason('r5', 'A')">1 (Not much)</button>
-            <button onclick="showReason('r5', 'B')">Invalid: I love Math!</button>
-            <button onclick="showReason('r5', 'C')">10 (A lot!)</button>
+            <button onclick="showReason('r5', 'A')">No!</button>
+            <button onclick="showReason('r5', 'B')">I never decided to truly hate Math</button>
+            <button onclick="showReason('r5', 'C')">Yes!</button>
             <button onclick="showReason('r5', 'D')">I don't know</button>
         </div>
         <div id="r5" class="reason-box"></div>
@@ -352,9 +352,9 @@
 <script>
     const logicData = {
         'r1': {
-            'A': "❌ TRAP: Picking Yes admits you were a cheater. (Loaded Question)",
-            'B': "❌ TRAP: Picking No admits you are still a cheater. (Loaded Question)",
-            'C': "❌ TRAP: Uncertainty implies you might have cheated. (Loaded Question)",
+            'A': "❌ TRAP: Picking Yes admits you were a cheater. (Complex Question)",
+            'B': "❌ TRAP: Picking No admits you are still a cheater. (Complex Question)",
+            'C': "❌ TRAP: Uncertainty implies you might have cheated. (Complex Question)",
             'D': "✅ LOGIC: You rejected the hidden premise of the question."
         },
         'r2': {
@@ -376,9 +376,9 @@
             'D': '❌ TRAP: You ignored the relative nature of time.'
         },
         'r5': {
-            'A': '❌ TRAP: You accepted a scale that limits your feelings.',
-            'B': '✅ LOGIC: You challenged the scale because you actually love Math!',
-            'C': '❌ TRAP: 10 still implies a level of hate.',
+            'A': '❌ TRAP: This is a Complex Question. Whether you say Yes or No, you are confirming the hidden assumption that you hate Math!',
+            'B': '✅ LOGIC: You identified the Complex Question! You correctly rejected the hidden assumption before answering.',
+            'C': '❌ TRAP: This is a Complex Question. Whether you say Yes or No, you are confirming the hidden assumption that you hate Math!.',
             'D': '❌ TRAP: "I dunno" still accepts the scale as valid.'
         },
         'r6': {
