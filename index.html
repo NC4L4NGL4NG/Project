@@ -22,12 +22,12 @@
             height: 100vh;
             margin: 0;
             overflow: hidden;
-        background-image: url('Pink pastel moving strips background.gif');
-          background-size: cover;
-         background-attachment: fixed;
-          background-position: center;
-         background-repeat: no-repeat;
-}
+            background-image: url('Pink pastel moving strips background.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
         .container {
             background: var(--white);
@@ -115,7 +115,7 @@
     <div class="page active" id="start">
         <h2>Survey!</h2>
         <p>This is a standard ..normal.. survey on student behavior. ✨<br><br>Please select the most "accurate" response for each scenario. Good luck!</p>
-                <small style="opacity: 0.2;"> Hint: think outside the box.</small>
+        <small style="opacity: 0.2;"> Hint: think outside the box.</small>
         <button onclick="goTo('start', 'q1')" style="width: 100%; background: var(--pink-dark); color: white;">Begin Survey</button>
     </div>
 
@@ -123,10 +123,10 @@
         <div class="page" id="q1">
             <p>1. To what extent has your history of academic dishonesty influenced your current study habits?</p>
             <div class="btn-grid">
-                <button onclick="showReason('r1', 'A')">It made me cautious</button>
-                <button onclick="showReason('r1', 'B')">It hasn't affected me</button>
-                <button onclick="showReason('r1', 'C')">Prefer not to say</button>
-                <button onclick="showReason('r1', 'D')">I have no such history</button>
+                <button onclick="showReason('r1', 'A')">I have no such history</button>
+                <button onclick="showReason('r1', 'B')">It made me cautious</button>
+                <button onclick="showReason('r1', 'C')">It hasn't affected me</button>
+                <button onclick="showReason('r1', 'D')">Prefer not to say</button>
             </div>
             <div id="r1" class="reason-box"></div>
             <button id="next1" class="next-btn" onclick="goTo('q1', 'q2')">Next Question 🎀</button>
@@ -136,9 +136,9 @@
             <p>2. Must we prioritize total environmental protection or focus solely on industrial growth?</p>
             <div class="btn-grid">
                 <button onclick="showReason('r2', 'A')">Environment first</button>
-                <button onclick="showReason('r2', 'B')">Industrial growth first</button>
-                <button onclick="showReason('r2', 'C')">Neither is important</button>
-                <button onclick="showReason('r2', 'D')">This is a false choice</button>
+                <button onclick="showReason('r2', 'B')">This is a false choice</button>
+                <button onclick="showReason('r2', 'C')">Industrial growth first</button>
+                <button onclick="showReason('r2', 'D')">Neither is important</button>
             </div>
             <div id="r2" class="reason-box"></div>
             <button id="next2" class="next-btn" onclick="goTo('q2', 'q3')">Next Question 🎀</button>
@@ -150,7 +150,7 @@
                 <button onclick="showReason('r3', 'A')">Corporate ownership</button>
                 <button onclick="showReason('r3', 'B')">Social media trends</button>
                 <button onclick="showReason('r3', 'C')">It isn't biased</button>
-                <button onclick="showReason('r3', 'D')">Not for me</button>
+                <button onclick="showReason('r3', 'D')">I don't accept the premise</button>
             </div>
             <div id="r3" class="reason-box"></div>
             <button id="next3" class="next-btn" onclick="goTo('q3', 'q4')">Next Question 🎀</button>
@@ -160,9 +160,9 @@
             <p>4. Free speech is essential because people should be able to say whatever they want.</p>
             <div class="btn-grid">
                 <button onclick="showReason('r4', 'A')">Agree completely</button>
-                <button onclick="showReason('r4', 'B')">There should be limits</button>
-                <button onclick="showReason('r4', 'C')">Context dependent</button>
-                <button onclick="showReason('r4', 'D')">That's complicated.</button>
+                <button onclick="showReason('r4', 'B')">This is circular reasoning</button>
+                <button onclick="showReason('r4', 'C')">There should be limits</button>
+                <button onclick="showReason('r4', 'D')">Context dependent</button>
             </div>
             <div id="r4" class="reason-box"></div>
             <button id="next4" class="next-btn" onclick="goTo('q4', 'q5')">Next Question 🎀</button>
@@ -173,8 +173,8 @@
             <div class="btn-grid">
                 <button onclick="showReason('r5', 'A')">Within the year</button>
                 <button onclick="showReason('r5', 'B')">I already have</button>
-                <button onclick="showReason('r5', 'C')">I never will</button>
-                <button onclick="showReason('r5', 'D')">I can't answer that.</button>
+                <button onclick="showReason('r5', 'C')">This is just a bandwagon</button>
+                <button onclick="showReason('r5', 'D')">I never will</button>
             </div>
             <div id="r5" class="reason-box"></div>
             <button id="next5" class="next-btn" onclick="goTo('q5', 'q6')">Next Question 🎀</button>
@@ -183,10 +183,10 @@
         <div class="page" id="q6">
             <p>6. Do you support the new policy, or do you prefer to let our community standards decline?</p>
             <div class="btn-grid">
-                <button onclick="showReason('r6', 'A')">Support the policy</button>
-                <button onclick="showReason('r6', 'B')">I am undecided</button>
+                <button onclick="showReason('r6', 'A')">I reject the dichotomy</button>
+                <button onclick="showReason('r6', 'B')">Support the policy</button>
                 <button onclick="showReason('r6', 'C')">Policy needs changes</button>
-                <button onclick="showReason('r6', 'D')">What?</button>
+                <button onclick="showReason('r6', 'D')">I am undecided</button>
             </div>
             <div id="r6" class="reason-box"></div>
             <button id="next6" class="next-btn" onclick="goTo('q6', 'q7')">Next Question 🎀</button>
@@ -196,9 +196,9 @@
             <p>7. How has your lack of motivation impacted your performance in this survey so far?</p>
             <div class="btn-grid">
                 <button onclick="showReason('r7', 'A')">Made me go faster</button>
-                <button onclick="showReason('r7', 'B')">Made me less accurate</button>
+                <button onclick="showReason('r7', 'B')">The question is loaded</button>
                 <button onclick="showReason('r7', 'C')">I am motivated</button>
-                <button onclick="showReason('r7', 'D')">I don't want to answer."</button>
+                <button onclick="showReason('r7', 'D')">I don't want to answer</button>
             </div>
             <div id="r7" class="reason-box"></div>
             <button id="next7" class="next-btn" onclick="goTo('q7', 'q8')">Next Question 🎀</button>
@@ -219,22 +219,22 @@
         <div class="page" id="q9">
             <p>9. Are you still refusing to accept the evidence provided by the majority of experts?</p>
             <div class="btn-grid">
-                <button onclick="showReason('r9', 'A')">Yes, I am</button>
-                <button onclick="showReason('r9', 'B')">No, I accept it now</button>
-                <button onclick="showReason('r9', 'C')">I need more evidence</button>
-                <button onclick="showReason('r9', 'D')">You think i'd fall for that?</button>
+                <button onclick="showReason('r9', 'A')">I never refused it</button>
+                <button onclick="showReason('r9', 'B')">Yes, I am still</button>
+                <button onclick="showReason('r9', 'C')">No, I accept it now</button>
+                <button onclick="showReason('r9', 'D')">I need more evidence</button>
             </div>
             <div id="r9" class="reason-box"></div>
             <button id="next9" class="next-btn" onclick="goTo('q9', 'q10')">Next Question 🎀</button>
         </div>
 
         <div class="page" id="q10">
-            <p>10.This statement is false. Is the statement true or false?</p>
+            <p>10. This statement is false. Is the statement true or false?</p>
             <div class="btn-grid">
                 <button onclick="showReason('r10', 'A')">True</button>
                 <button onclick="showReason('r10', 'B')">False</button>
-                <button onclick="showReason('r10', 'C')">Both</button>
-                <button onclick="showReason('r10', 'D')">Well..</button>
+                <button onclick="showReason('r10', 'C')">It's a paradox</button>
+                <button onclick="showReason('r10', 'D')">Both</button>
             </div>
             <div id="r10" class="reason-box"></div>
             <p id="final-msg" style="display:none; color: var(--pink-dark); font-weight: bold; margin-top: 20px;">🎀 Survey Complete! You are a Logic Master. 🎀</p>
@@ -244,16 +244,16 @@
 
 <script>
     const logicData = {
-        'r1': { 'A':"❌ TRAP: Confirms dishonesty as a past fact.", 'B':"❌ TRAP: Confirms a 'history' while denying effect.", 'C':"❌ TRAP: Leaves the loaded premise unchallenged.", 'D':"✅ LOGIC: You rejected the loaded premise." },
-        'r2': { 'A':"❌ TRAP: Accepts the narrow either/or framing.", 'B':"❌ TRAP: Falls for the industrial growth extreme.", 'C':"❌ TRAP: Seeks middle ground in a false choice.", 'D':"✅ LOGIC: You recognized the False Dilemma." },
+        'r1': { 'A':"✅ LOGIC: You rejected the loaded premise.", 'B':"❌ TRAP: Confirms dishonesty as a past fact.", 'C':"❌ TRAP: Confirms a 'history' while denying effect.", 'D':"❌ TRAP: Leaves the loaded premise unchallenged." },
+        'r2': { 'A':"❌ TRAP: Accepts the narrow either/or framing.", 'B':"✅ LOGIC: You recognized the False Dilemma.", 'C':"❌ TRAP: Falls for the industrial growth extreme.", 'D':"❌ TRAP: Seeks middle ground in a false choice." },
         'r3': { 'A':"❌ TRAP: Validates that bias exists.", 'B':"❌ TRAP: Focuses on 'where' instead of 'if'.", 'C':"❌ TRAP: Doesn't address the loaded nature.", 'D':"✅ LOGIC: You identified the Presupposition fallacy." },
-        'r4': { 'A':"❌ TRAP: Agreeing with a statement that proves nothing.", 'B':"❌ TRAP: Agreeing with a circular definition.", 'C':"❌ TRAP: Focuses on limits, not logic.", 'D':"✅ LOGIC: This is Circular Reasoning (Petitio Principii)." },
-        'r5': { 'A':"❌ TRAP: Timing does not equal validity.", 'B':"❌ TRAP: Falling for crowd pressure.", 'C':"❌ TRAP: Defiance isn't logic.", 'D':"✅ LOGIC: Spotted the Bandwagon (Ad Populum) fallacy." },
-        'r6': { 'A':"❌ TRAP: Support based on a threat is a False Dilemma.", 'B':"❌ TRAP: Indecision still operates in a fake choice.", 'C':"❌ TRAP: Fixing a broken premise is a trap.", 'D':"✅ LOGIC: You identified the False Dichotomy." },
-        'r7': { 'A':"❌ TRAP: Attempts to measure a fake presupposition.", 'B':"❌ TRAP: Accepts the premise that you are flawed.", 'C':"❌ TRAP: Motivation doesn't stop the question being loaded.", 'D':"✅ LOGIC: Question presupposes a negative state." },
+        'r4': { 'A':"❌ TRAP: Agreeing with a statement that proves nothing.", 'B':"✅ LOGIC: This is Circular Reasoning (Petitio Principii).", 'C':"❌ TRAP: Focuses on limits, not logic.", 'D':"❌ TRAP: Agreeing with a circular definition." },
+        'r5': { 'A':"❌ TRAP: Timing does not equal validity.", 'B':"❌ TRAP: Falling for crowd pressure.", 'C':"✅ LOGIC: Spotted the Bandwagon (Ad Populum) fallacy.", 'D':"❌ TRAP: Defiance isn't logic." },
+        'r6': { 'A':"✅ LOGIC: You identified the False Dichotomy.", 'B':"❌ TRAP: Support based on a threat is a False Dilemma.", 'C':"❌ TRAP: Fixing a broken premise is a trap.", 'D':"❌ TRAP: Indecision still operates in a fake choice." },
+        'r7': { 'A':"❌ TRAP: Attempts to measure a fake presupposition.", 'B':"✅ LOGIC: Question presupposes a negative state.", 'C':"❌ TRAP: Motivation doesn't stop the question being loaded.", 'D':"❌ TRAP: Accepts the premise that you are flawed." },
         'r8': { 'A':"❌ TRAP: 'Law is law' is circular.", 'B':"❌ TRAP: Ethical argument, not logical detection.", 'C':"❌ TRAP: Context doesn't fix a circular claim.", 'D':"✅ LOGIC: You recognized the Tautology loop." },
-        'r9': { 'A':"❌ TRAP: 'Yes' confirms you were refusing before.", 'B':"❌ TRAP: 'No' confirms you *were* refusing.", 'C':"❌ TRAP: Implies you'll eventually cave to the trap.", 'D':"✅ LOGIC: Avoided the 'Still' trap in this Complex Question." },
-        'r10': { 'A':"❌ TRAP: If it's true, it's false.", 'B':"❌ TRAP: If it's false, it's true.", 'C':"❌ TRAP: Breaks standard logical rules.", 'D':"✅ LOGIC: Recognized a self-referential paradox." }
+        'r9': { 'A':"✅ LOGIC: Avoided the 'Still' trap in this Complex Question.", 'B':"❌ TRAP: 'Yes' confirms you were refusing before.", 'C':"❌ TRAP: 'No' confirms you *were* refusing.", 'D':"❌ TRAP: Implies you'll eventually cave to the trap." },
+        'r10': { 'A':"❌ TRAP: If it's true, it's false.", 'B':"❌ TRAP: If it's false, it's true.", 'C':"✅ LOGIC: Recognized a self-referential paradox.", 'D':"❌ TRAP: Breaks standard logical rules." }
     };
 
     function showReason(boxId, choice) {
